@@ -1,0 +1,58 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.principal {
+    transition: 20s;
+    text-shadow: 10px 10px 10px white;
+}
+
+.inicio h1{
+    font-family:fantasy;
+    text-align: center;
+}
+
+.bg p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+#p{
+    font-weight: bold;
+    text-shadow: 5px 5px 5px white;
+    text-align: left;
+    font-size: 15pt;
+}
+
+input {
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.resultado {
+    margin-top: 5px;
+    text-shadow: 5px 5px 5px white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#time{
+    text-shadow: 5px 5px 5px white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tab{
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+#num {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px gray;
+}

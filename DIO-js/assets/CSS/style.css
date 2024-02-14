@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(
+        to top left,
+        #ad393a,
+        orange,
+        white
+    );
+}
+@font-face {
+    font-family: 'Skyland';
+    src: url(/assets/Font/Skyland.otf)format('opentype');
+}
+
+*{
+    font-family: 'Skyland';
+    border-radius: 8px;
+}
+
+.content{
+    padding: 1rem;
+    font-size: 50px;
+} 
+
+ol.pokemons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 30px;
+}
+
+ol.pokemons li {
+    margin: 30px 50px;
+    padding: 1rem;
+    color:white;
+    height: 130px;
+    width: 220px;
+}
+
+ol.pokemons li img{
+    width: 145px;
+    
+}
+
+.pk{
+    background-image: linear-gradient(
+        to right,
+        #808000,
+        #6b8e23,
+        #9acd32
+    );
+}
+
+.pk2{
+    background-image: linear-gradient(
+        to right,
+        darkred,
+        #b22222,
+        #fa8072
+    );
+}

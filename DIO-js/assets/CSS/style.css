@@ -39,11 +39,14 @@ ol.pokemons li {
 }
 
 ol.pokemons li img{
-    width: 145px;
+    width: 120px;
+    padding-left: 50px;
+    margin-top: -10%;
     
 }
 
 .pk{
+    display: grid;
     background-image: linear-gradient(
         to right,
         #808000,
@@ -53,10 +56,23 @@ ol.pokemons li img{
 }
 
 .pk2{
+    display: grid;
     background-image: linear-gradient(
         to right,
         darkred,
         #b22222,
         #fa8072
     );
+}
+
+.type{
+    list-style: none;
+    font-size: 15px;
+    display: grid;
+}
+
+.number{
+    color: black;
+    font-size: 10px;
+    margin-right: 40%;
 }

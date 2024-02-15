@@ -14,3 +14,6 @@ Inserido um projeto antigo da faculdade
 
 13/02/24
 Inclusão do projeto da DIO da pokedex, iniciado com a listagem de alguns pokemons separado noo display grid e com os fundos especificos com background e background de body. Fonte para o projeto incluido de um arquivo externo
+
+14/02/24
+Acrescentado o número e detalhes com o alinhamento 

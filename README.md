@@ -17,3 +17,6 @@ Inclusão do projeto da DIO da pokedex, iniciado com a listagem de alguns pokemo
 
 14/02/24
 Acrescentado o número e detalhes com o alinhamento 
+
+17/02/24
+Estilização e deixar reponsivo 

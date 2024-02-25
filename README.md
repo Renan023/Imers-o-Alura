@@ -20,3 +20,6 @@ Acrescentado o número e detalhes com o alinhamento
 
 17/02/24
 Estilização e deixar reponsivo 
+
+25/02/24
+Incluido o projeto pela DIO do jogo detona Ralph, até agora inluido a estilização do HTML e estilização do CSS, agora as funções pelo javascript. Incluido somente o de movimento por enquanto

@@ -23,3 +23,6 @@ Estilização e deixar reponsivo
 
 25/02/24
 Incluido o projeto pela DIO do jogo detona Ralph, até agora inluido a estilização do HTML e estilização do CSS, agora as funções pelo javascript. Incluido somente o de movimento por enquanto
+
+25/02/24
+Finalizado o projeto detona Ralph, function para acertar e contar a pontuação contagem regressiva e inclusão de audio quando acerta o Ralph

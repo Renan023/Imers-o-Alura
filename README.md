@@ -32,3 +32,6 @@ Inclusão do projeto jogo da memória da DIO
 
 27/02/24
 Correção da localização das imagens e sons do jogo detona Ralph
+
+27/02/24
+Inicio do projeto da DIO simulador de piano, algumas estilização no container e introdução de listas

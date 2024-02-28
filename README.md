@@ -26,3 +26,9 @@ Incluido o projeto pela DIO do jogo detona Ralph, até agora inluido a estiliza�
 
 25/02/24
 Finalizado o projeto detona Ralph, function para acertar e contar a pontuação contagem regressiva e inclusão de audio quando acerta o Ralph
+
+26/02/24
+Inclusão do projeto jogo da memória da DIO 
+
+27/02/24
+Correção da localização das imagens e sons do jogo detona Ralph

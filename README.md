@@ -35,3 +35,6 @@ Correção da localização das imagens e sons do jogo detona Ralph
 
 27/02/24
 Inicio do projeto da DIO simulador de piano, algumas estilização no container e introdução de listas
+
+29/02/24
+Simulador de piano som incluído, estilização final do piano

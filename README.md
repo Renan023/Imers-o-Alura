@@ -38,3 +38,6 @@ Inicio do projeto da DIO simulador de piano, algumas estilização no container 
 
 29/02/24
 Simulador de piano som incluído, estilização final do piano
+
+17/03/24
+Alteração no projeto da pokedex para troca automatica de img

@@ -31,7 +31,7 @@ Finalizado o projeto detona Ralph, function para acertar e contar a pontuação 
 Inclusão do projeto jogo da memória da DIO 
 
 27/02/24
-Correção da localização das imagens e sons do jogo detona Ralph
+Correção da localização das imagens e sons do jogo detona Ralph 
 
 27/02/24
 Inicio do projeto da DIO simulador de piano, algumas estilização no container e introdução de listas
@@ -41,3 +41,9 @@ Simulador de piano som incluído, estilização final do piano
 
 17/03/24
 Alteração no projeto da pokedex para troca automatica de img
+
+29/09/24
+Projeto DIO- desafio_html incluido
+
+30/09/24
+Projeto mundo invertido pela Dio iniciado

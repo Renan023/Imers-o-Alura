@@ -47,3 +47,6 @@ Projeto DIO- desafio_html incluido
 
 30/09/24
 Projeto mundo invertido pela Dio iniciado
+
+01/10/24
+No projeto do mundo invertido é inserido o formulário, imagens e textos 

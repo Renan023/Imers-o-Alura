@@ -1,0 +1,238 @@
+:root{
+    --primary-color: #8A0707;
+    --primary-color-contrast: #ffff;
+    --field-background-color: #0B0C1A;
+}
+
+@font-face {
+    font-family: 'Darkwoman';
+    src: url(assets/Fonte/Darkwoman.otf)format('Opentype');
+}
+
+@font-face {
+    font-family: 'Darklight';
+    src: url(assets/Fonte/Darklight.otf)format('Opentype');
+}
+
+html,body{
+    background: linear-gradient(
+        to top left,
+            #ffff,
+            #0000,
+            #0c1445
+    );
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2, 
+h3 {
+    font-family: 'Darkwoman';
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+p{
+    color: var(--highlight-color);
+}
+
+p,
+input,
+textarea, 
+label {
+    font-family: 'Darklight';
+    font-size: 1.6rem;
+}
+
+button{
+    padding: 16px 32px ;
+    background-color: transparent;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s ;
+}
+
+header{
+    background: linear-gradient(
+        to bottom right,
+        #e6e6e6,
+        #b3b3b3,
+        #808080,
+        #3333,
+        #0000,
+        #0c1445
+    );
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/images/banner/florest.webp);
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    background-size: cover;
+    filter: saturate(0);
+    opacity: 0.2;
+
+}
+
+#header-content{
+    max-width: 700px;
+    padding: 80px 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+#header-content img {
+    width: 80%;
+}
+
+#header-content p {
+    margin: 30px 0 50px;
+}
+
+#header-content button{
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#header-content button:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+}
+
+.world-characters{
+    width: 100%;
+    max-width: 900px;
+    position: absolute;
+}
+
+#top-characters{
+    height: 100%;
+    background-color: #ffffff;
+    bottom: -3px;
+
+    mask: url(assets/images/characters/kids-on-the-bike.svg) bottom/ 100% no-repeat;
+    --webkit-mask: url(assets/images/characters/kids-on-the-bike.svg) bottom/ 100% no-repeat;
+}
+
+#bottom-characters{
+    height: 500px;
+    background-color: #999999;
+    transform: rotateZ(180deg) scaleX(-1);
+    position: relative;
+
+    mask: url(assets/images/characters/inverted-world-monster.svg) bottom/ contain no-repeat;
+    --webkit-mask: url(assets/images/characters/inverted-world-monster.svg) bottom/ 100% no-repeat
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+#section-inverted-world{
+    align-items: center;
+}
+
+#section-inverted-world{
+    width: 50%;
+}
+
+#section-inverted-world #section-texts h2 {
+    max-width: 300px;
+}
+
+#section-stranger-things-trailer #section-texts{
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+}
+
+#section-stranger-things-trailer .video-frame{
+    background-color: var(--primary-color);
+}
+
+#section-stranger-things-trailer .video-frame iframe {
+    position: relative;
+    bottom: 24px;
+    left: 24px;
+    border: 1px solid;
+    border-image: linear-gradient(
+        var(--primary-color-contrast),
+        var(--primary-color)
+    );
+    border-image-slice: 10;
+}
+
+#section-stranger-things-gallery .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#section-stranger-things-gallery .container h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#section-stranger-things-gallery #gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#section-stranger-things-gallery .gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
+
+#section-stranger-things-gallery .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #0000;
+}
+
+#section-stranger-things-gallery .gallery-image.active{
+    opacity: 1;
+    z-index: 1;
+}

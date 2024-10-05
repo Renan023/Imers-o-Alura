@@ -8,7 +8,7 @@
     <title>Mundo Invertido</title>
 </head>
 <body>
-    <header>
+    <header class="light-theme">
         <audio id="music" >
             <source src="assets/musics/normal-world.mpeg"/>
         </audio>
@@ -26,9 +26,10 @@
         <div id="top-characters" class="world-characters"></div>
     </header>
     <main>
+        <div id="bottom-characters" class="world-characters"></div>
         <section id="section-inverted-world" class="container">
             <div id="section-texts">
-                <h1>O mundo Invetido</h1>
+                <h1>O mundo Invertido</h1>
                 <p role="text">
                     O mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades
                     assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem 
@@ -37,8 +38,8 @@
             </div>
             <img src="assets/images/content/inverted-world.png" alt="Image ilustrativa" id="invert-element">
         </section>
-        <section>
-            <div>
+        <section id="section-stranger-things-trailer" class="container">
+            <div class="video-frame" aria-hidden="true">
                 <iframe
                 width="460"
                 height="215" 
@@ -53,22 +54,22 @@
                 <h2>Strangers Things</h2>
                 <p role="text">
                     Mais experientes, os heróis de Strangers Things também precisam enfrentar vários
-                    desafios maioresdo que nunca e fazer decisões que vão mudar suas vidas para 
+                    desafios maiores do que nunca e fazer decisões que vão mudar suas vidas para 
                     sempre. Confira o trailer ao lado.
                 </p>
             </div>
         </section>
-        <section id="section-stranger-things-galery">
-            <div id="container section-text">
+        <section id="section-stranger-things-gallery">
+            <div class="container section-text">
                 <h2>Uma das séries mais assistidas da Netflix</h2>
-                <ul id="galery-container" role="gallery">
-                    <li id="gallery-image inverted-element">
+                <ul id="gallery-container" role="gallery">
+                    <li class="gallery-image active" id="image1">
                         <img src="assets/images/content/serie-image-01.png" alt="Imagem Vecna" >
                     </li>
-                    <li id="gallery-image inverted-element">
+                    <li class="gallery-image" id="image2">
                         <img src="assets/images/content/serie-image-02.png" alt="Imagem Ilustrativa" >
                     </li>
-                    <li id="gallery-image inverted-element">
+                    <li class="gallery-image " id="image3">
                         <img src="assets/images/content/serie-image-03.png" alt="Imagem Ilustrativa" srcset="">
                     </li>
                 </ul>

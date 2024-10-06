@@ -53,3 +53,8 @@ No projeto do mundo invertido é inserido o formulário, imagens e textos
 
 05/10/24
 Projeto mundo invertido inclusão de fontes novas, estilização no CSS e no Javascript fooi inserido a rotação de imagens automaticas 
+
+06/10/24
+Projeto orientado pela Dio concluido, estilizações do footer e alteração no javascript do dark theme para o light theme 
+
+

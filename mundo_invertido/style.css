@@ -1,7 +1,37 @@
-:root{
-    --primary-color: #8A0707;
-    --primary-color-contrast: #ffff;
-    --field-background-color: #0B0C1A;
+/*** VARIABLES & THEMES ***/
+
+:root {
+    --primary-color: #cf0f0f;
+    --primary-color-contrast: #ffffff;
+    --field-background-color: #0000;
+  }
+  
+  .light-theme {
+    --page-background: linear-gradient(
+      180deg,
+      #ffffff 0%,        
+      #3645 65%,
+      #e0e0e0 100%
+    );
+    --highlight-color: #00000;
+    --featured-font-family: "Dark_brush";
+    --footer-background-color: #007ba7; 
+    --character-top-image-src: url(assets/images/characters/kids-on-the-bike.svg);
+    --character-bottom-image-src: url(assets/images/characters/inverted-world-monster.svg);
+}
+  
+  .dark-theme {
+    --page-background: linear-gradient(
+      180deg,
+      #050000 0%,
+      #130404 65%,
+      rgba(19, 1, 1, 0.75) 100%
+    );
+    --highlight-color: #ffffff;
+    --featured-font-family: "Dark_triad";
+    --footer-background-color: #000000;
+    --character-bottom-image-src: url(assets/images/characters/kids-on-the-bike.svg);
+    --character-top-image-src: url(assets/images/characters/inverted-world-monster.svg);
 }
 
 @font-face {
@@ -14,17 +44,24 @@
     src: url(assets/Fonte/Darklight.otf)format('Opentype');
 }
 
-html,body{
-    background: linear-gradient(
-        to top left,
-            #ffff,
-            #0000,
-            #0c1445
-    );
+@font-face {
+    font-family: 'Dark_brush';
+    src: url(assets/Fonte/Dark\ Brush.ttf) format('Truetype');
 }
+
+@font-face {
+    font-family:'Dark_triad' ;
+    src: url(assets/Fonte/Dark\ Triad.otf) format('Opentype');
+}
+
+.dark-theme .inverted-element{
+    transform: rotateZ(180deg) scaleX(-1);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
+    transition: 1s;
 }
 
 h1,
@@ -53,7 +90,7 @@ button{
     padding: 16px 32px ;
     background-color: transparent;
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--featured-font-family);
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -127,8 +164,8 @@ header::before{
     background-color: #ffffff;
     bottom: -3px;
 
-    mask: url(assets/images/characters/kids-on-the-bike.svg) bottom/ 100% no-repeat;
-    --webkit-mask: url(assets/images/characters/kids-on-the-bike.svg) bottom/ 100% no-repeat;
+    mask: var(--character-top-image-src) bottom/ 100% no-repeat;
+    --webkit-mask: var(--character-top-image-src) bottom/ 100% no-repeat;
 }
 
 #bottom-characters{
@@ -137,8 +174,8 @@ header::before{
     transform: rotateZ(180deg) scaleX(-1);
     position: relative;
 
-    mask: url(assets/images/characters/inverted-world-monster.svg) bottom/ contain no-repeat;
-    --webkit-mask: url(assets/images/characters/inverted-world-monster.svg) bottom/ 100% no-repeat
+    mask: var(--character-bottom-image-src) bottom/ contain no-repeat;
+    --webkit-mask: var(--character-bottom-image-src) bottom/ 100% no-repeat
 }
 
 main{
@@ -146,6 +183,17 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--page-background) no-repeat,
+         url(assets/images/backgrounds/florest.png) no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
 section{
@@ -223,16 +271,144 @@ section{
     transition: opacity 1s ease-in-out;
     opacity: 0;
     z-index: 0;
+    box-sizing: border-box;
+    border: 1px solid #f0f8ff;
 }
 
 #section-stranger-things-gallery .gallery-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border: 5px solid #0000;
+    box-sizing: border-box;
+    border: 1px solid #f8f8f8;
+    
 }
 
 #section-stranger-things-gallery .gallery-image.active{
     opacity: 1;
     z-index: 1;
+}
+
+#section-form{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+#section-form h2 {
+    width: 600px;
+}
+
+#section-form #form-content h3{
+    color: var(--highlight-color);
+    flex-basis: 30%;
+    text-align: left;
+}
+
+#section-form #form-content h3 span {
+    color: #8A0707;
+}
+
+#section-form #form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-form .form-container {
+    flex-basis: 50%;
+    position: relative;
+}
+
+#section-form .form-container::after {
+    content: "";
+    background:linear-gradient(
+        to bottom right,
+        #0c1445,
+        #8A0707,
+        #000000
+    );
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 24px;
+    left: 24px;
+    z-index: -1;
+}
+
+#section-form .form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    background:linear-gradient(
+        to bottom right,
+        #0c1445,
+        #999999,
+        #ffffff
+    );
+    color: #ffffff;
+    text-align: left;
+    align-items: center;
+}
+
+.btnSubscribe {
+    margin-top: 10px;
+    background: linear-gradient(
+        to bottom left,
+        #0c1445,
+        #999999,
+        #ffffff
+    );
+    color: #000000;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.btnSubscribe:hover{
+    background: linear-gradient(
+        to bottom left,
+        #8A0707,
+        #000000
+    );
+    color: #ffffff;
+}
+
+footer {
+    padding: 60px 0 ;
+    background: var(--footer-background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p{
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+
+footer::before,
+footer::after{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background: url(assets/images/footer/tape.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -30px;
+}
+
+footer::before{
+    left: -50px;
+    transform: rotateZ(-10deg);
+}
+
+footer::after{
+    right: -50px;
+    transform: rotateZ(10deg);
 }

@@ -7,8 +7,13 @@ document.addEventListener("DOMContentLoaded", function(){
         currentIndex = (currentIndex + 1) % images.length;
         images[currentIndex].classList.add('active');
     }
-        images[currentIndex].classList.add('active');
+        
+    images[currentIndex].classList.add('active');
 
-        setInterval(showNextImage,3000)
+    setInterval(showNextImage,3000)
 })
 
+function switchTheme(){
+    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+}

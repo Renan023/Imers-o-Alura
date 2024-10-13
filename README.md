@@ -57,4 +57,5 @@ Projeto mundo invertido inclusão de fontes novas, estilização no CSS e no Jav
 06/10/24
 Projeto orientado pela Dio concluido, estilizações do footer e alteração no javascript do dark theme para o light theme 
 
-
+13/10/24
+Incluido projeto Spiderverse inspirado pelo projeto multiverso do homem aranha pela DIO, com alterações no background, estilizações e simbolo da aranha sendo modificados automáticos

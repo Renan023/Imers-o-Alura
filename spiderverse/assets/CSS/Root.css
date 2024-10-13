@@ -1,0 +1,32 @@
+@import url(Reset.css);
+@import url(StyleSheet.css);
+
+@font-face {
+    font-family: 'Distant_Stroke';
+    src: url(../Fonte/Distant_Stroke.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'Hey_Beauty';
+    src: url(../Fonte/Hey\ Beauty.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'Infinite_Stroke';
+    src: url(../Fonte/Infinite_Stroke.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'Madinah_Authentic';
+    src: url(..//Fonte/Madinah\ Authentic.otf) format('OpenType');
+}
+
+:root{
+    --font-main: 'Infinite_Stroke';
+    --page-background: linear-gradient(
+        to top left,
+        rgb(230, 119, 119),
+        rgb(192, 143, 192), 
+        rgba(43, 28, 28, 0)
+    );
+}

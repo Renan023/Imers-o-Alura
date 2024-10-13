@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background: var(--page-background);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/s-main.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#s-nav{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.s-nav_item{
+    display: inline-block;
+    margin: 0 1.25rem;
+}
+
+#s-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#s-icon .s-icon_item {
+    display: none;
+}
+
+#s-icon .s-icon_item.active {
+    display: block;
+}
+
+#s-icon .s-icon_item img {
+    width: 2.5rem;
+    height: auto;
+}
+

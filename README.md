@@ -59,3 +59,6 @@ Projeto orientado pela Dio concluido, estilizações do footer e alteração no 
 
 13/10/24
 Incluido projeto Spiderverse inspirado pelo projeto multiverso do homem aranha pela DIO, com alterações no background, estilizações e simbolo da aranha sendo modificados automáticos
+
+15/10/24
+Projeto Spiderverse foi inserido imagens de personagens e alterações de letras nas animações

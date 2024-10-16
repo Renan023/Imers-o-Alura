@@ -1,0 +1,96 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background: var(--page-background);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/s-main.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#s-nav{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.s-nav_item{
+    display: inline-block;
+    margin: 0 1.25rem;
+}
+
+#s-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#s-icon .s-icon_item {
+    display: none;
+}
+
+#s-icon .s-icon_item.active {
+    display: block;
+}
+
+#s-icon .s-icon_item img {
+    position: absolute;
+    width: 2.5rem;
+}
+
+#s-char{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#s-char .s-char-image{
+    margin-top: 2.5rem;
+    width: 12.5rem;
+    height: auto;
+    border: 2px solid transparent;
+    transition: transform 0.5s ease-in-out;
+}
+
+#s-char .s-char-image:hover{
+    transform: scale(1.1);
+}
+
+#s-char .s-title{
+    margin-top: 1.5rem;
+    text-align: center;
+    transition: font-family 1s ease-in-out, font-size 1s ease-in-out, color 1s ease-in-out;
+}
+
+#s-char #spidermiles .s-title:hover{
+    font-family: var(--fontMiles);
+    font-size: 2.5rem;
+    color: #ffff;
+}
+
+#s-char #spiderpeter .s-title:hover{
+    font-family: var(--fontPeter);
+    font-size: 2rem;
+    color: #8a0707;
+}
+
+#s-char #spidergwen .s-title:hover{
+    font-family: var(--fontGwen);
+    font-size: 2rem;
+    color: #800080;
+}
+
+
+

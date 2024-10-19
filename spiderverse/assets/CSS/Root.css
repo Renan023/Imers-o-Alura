@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'Hey_Beauty';
-    src: url(../Fonte/Hey\ Beauty.otf) format('OpenType');
+    font-family: 'Nathalia';
+    src: url(../Fonte/Nathalia.ttf) format('TrueType');
 }
 
 @font-face {
@@ -17,8 +17,8 @@
 }
 
 @font-face {
-    font-family: 'Madinah_Authentic';
-    src: url(..//Fonte/Madinah\ Authentic.otf) format('OpenType');
+    font-family: 'The_California';
+    src: url(..//Fonte/The\ California.ttf) format('TrueType');
 }
 
 :root{
@@ -29,4 +29,7 @@
         rgb(192, 143, 192), 
         rgba(43, 28, 28, 0)
     );
+    --fontPeter: 'The_California';
+    --fontMiles: 'Distant_Stroke';
+    --fontGwen: 'Nathalia'
 }

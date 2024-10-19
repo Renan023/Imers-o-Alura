@@ -1,19 +1,31 @@
 html,body{
-    height: 100%;
     width: 100%;
+    height: auto;
     background: var(--page-background);
+}
+
+#player{
+    opacity: 0;
+    width: 50%;
+    height: 2.5rem;
+    transition: 1s ease-in-out;
+}
+
+#player:hover{
+    opacity: .2;
 }
 
 body::before{
     content: "";
-    position: absolute;
+    position: fixed;
     background-image: url(../img/s-main.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    opacity: 0.3;
+    opacity: .8;
+    transition: 1s ease-in-out;
 }
 
 #s-nav{
@@ -44,7 +56,73 @@ body::before{
 }
 
 #s-icon .s-icon_item img {
+    position: absolute;
     width: 2.5rem;
-    height: auto;
 }
 
+#s-char{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#s-char .s-char-image{
+    margin-top: 2.5rem;
+    width: 12.5rem;
+    height: auto;
+    border: 2px solid transparent;
+    transition: transform 1s ease-in-out;
+}
+
+#s-char .s-char-image:hover{
+    opacity: .2;
+    transform: scale(1.1);
+}
+
+#s-char .s-title{
+    margin-top: 1.5rem;
+    text-align: center;
+    transition: font-family 1s ease-in-out, font-size 1s ease-in-out, color 1s ease-in-out;
+}
+
+#s-char #spidermiles .s-title:hover{
+    font-family: var(--fontMiles);
+    font-size: 2.5rem;
+    color: #ffff;
+}
+
+#s-char #spiderpeter .s-title:hover{
+    font-family: var(--fontPeter);
+    font-size: 2rem;
+    color: #8a0707;
+}
+
+#s-char #spidergwen .s-title:hover{
+    font-family: var(--fontGwen);
+    font-size: 2rem;
+    color: #800080;
+}
+
+body#spiderpeter-hovered::before{
+    background-image: url(../img/peterback.jpg);
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+body#spidermiles-hovered::before{
+    background-image: url(../img/milesback.jpg);
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+body#spidergwen-hovered::before{
+    background-image: url(../img/gwenback.jpg);
+    opacity: 1;
+    transition:  1s ease-in-out;
+}
+
+body[id^="spider"] .s-card:not(.s-card--hovered){
+    opacity: 0;
+}

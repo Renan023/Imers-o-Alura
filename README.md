@@ -62,3 +62,6 @@ Incluido projeto Spiderverse inspirado pelo projeto multiverso do homem aranha p
 
 15/10/24
 Projeto Spiderverse foi inserido imagens de personagens e alterações de letras nas animações
+
+19/10/24
+foi colocado um player e audio e animações no background dos personagens

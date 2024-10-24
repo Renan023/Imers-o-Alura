@@ -65,3 +65,6 @@ Projeto Spiderverse foi inserido imagens de personagens e alterações de letras
 
 19/10/24
 foi colocado um player e audio e animações no background dos personagens
+
+23/10/24
+página do personagem Peter criada e linkada. No qual a Página está estilizada falando um pouco a história do personagem , com vídeos linkados do youtube, imagens redimensionadas e um começo de criação do rodapé 

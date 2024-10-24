@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'JackBrush';
+    src: url(../Fonte/Jackbrush.ttf) format('Truetype');
+}
+
+
+:root{
+    --page-background: linear-gradient(
+        to bottom left,
+        #ffffff,
+        #ff0000,
+        #0000ff
+    );
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background:var(--page-background)
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    background-image: url(../img/peterbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+
+#s-navpeter{
+    margin-left: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+#s-navpeter .s-navpeter_item{
+    width: 100%;
+    height: 100;
+    margin: 0;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.25rem;
+    transition: 1s ease-in-out;
+}
+
+#s-navpeter .s-navpeter_item a:hover{
+    transform: scale(1.2);
+}
+
+.s-iconpeter img{
+    width: 2.5rem;
+    height: auto;
+    padding: 0 2.5rem;
+    transition: 1s ease-in-out;
+}
+
+#s-navpeter .s-iconpeter img:hover{
+    transform: scale(1.1);
+}
+
+.s-main-content{
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    margin: 0 12rem;
+}
+
+.s-main-content .s-main-content-top img{
+    width: 9rem;
+    height: 16rem;
+    margin: -3.5rem 20rem;
+}
+
+.s-main-content .s-content-perfil{
+    margin: 5rem 2.5rem -1rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.s-main-content .s-content-perfil h4{
+    font-size: 1rem;
+    text-decoration: underline;
+    text-align: initial;
+    margin: 1rem 10rem -2.9rem 3rem;
+}
+
+.s-main-content .s-content-perfil img{
+    width: 20rem;
+    height: auto;
+    margin: 0 0 0 19rem;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+.s-main-content .s-content-perfil p{
+    margin: 0 10px ;
+}
+
+.s-video {
+    display: flex;
+}
+
+.s-video iframe{
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    margin: 36rem 0 3rem 10.6rem;
+}

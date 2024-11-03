@@ -1,6 +1,44 @@
+@font-face {
+    font-family: 'Distant_Stroke';
+    src: url(../Fonte/Distant_Stroke.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'Nathalia';
+    src: url(../Fonte/Nathalia.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'Infinite_Stroke';
+    src: url(../Fonte/Infinite_Stroke.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'Breathing';
+    src: url(..//Fonte/Breathing.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'JackBrush';
+    src: url(../Fonte/Breathing.ttf) format('Truetype');
+}
+
+:root{
+    --font-main: 'Infinite_Stroke';
+    --page-background: linear-gradient(
+        to top left,
+        rgb(230, 119, 119),
+        rgb(192, 143, 192), 
+        rgba(43, 28, 28, 0)
+    );
+    --fontPeter: 'JackBrush';
+    --fontMiles: 'Distant_Stroke';
+    --fontGwen: 'Nathalia'
+}
+
 html,body{
     width: 100%;
-    height: auto;
+    height: 100%;
     background: var(--page-background);
 }
 
@@ -24,8 +62,8 @@ body::before{
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    opacity: .8;
-    transition: 1s ease-in-out;
+    opacity: .95;
+    transition: 2s ease-in-out;
 }
 
 #s-nav{
@@ -82,7 +120,7 @@ body::before{
 }
 
 #s-char .s-title{
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 1.5rem 0 ;
     text-align: center;
     transition: font-family 1s ease-in-out, font-size 1s ease-in-out, color 1s ease-in-out;
 }
@@ -95,7 +133,7 @@ body::before{
 
 #s-char #spiderpeter .s-title:hover{
     font-family: var(--fontPeter);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #8a0707;
 }
 
@@ -108,21 +146,62 @@ body::before{
 body#spiderpeter-hovered::before{
     background-image: url(../img/peterback.jpg);
     opacity: 1;
-    transition: 1s ease-in-out;
+    transition: 2s ease-in-out;
 }
 
 body#spidermiles-hovered::before{
     background-image: url(../img/milesback.jpg);
     opacity: 1;
-    transition: 1s ease-in-out;
+    transition: 2s ease-in-out;
 }
 
 body#spidergwen-hovered::before{
     background-image: url(../img/gwenback.jpg);
     opacity: 1;
-    transition:  1s ease-in-out;
+    transition: 2s ease-in-out;
 }
 
 body[id^="spider"] .s-card:not(.s-card--hovered){
     opacity: 0;
 }
+
+.s-video{
+    position: relative;
+    margin: 1rem 20rem;
+    opacity: 0;
+}
+
+.s-video:hover{
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.s-footer{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    background: linear-gradient(
+        to top left,
+        black,
+        gray,
+        white
+    );
+    opacity: .6;
+    display: flex;
+    flex-direction: row;
+}
+
+.s-footer h2{
+    margin: 3rem;
+    font-family: 'JackBrush';
+}
+
+.s-footer h3{
+    margin: 3rem;
+}
+
+.s-footer h3 a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+

@@ -1,10 +1,9 @@
 *{
-    font-family: 'Infinite_Stroke';
-    font-size: 20px;
+    font-family: 'Distant_Stroke';
     margin: 0;
     padding: 0;
+    text-decoration: none;
     list-style: none;
     border: 0;
-    text-decoration: none;
     color: #040406;
 }

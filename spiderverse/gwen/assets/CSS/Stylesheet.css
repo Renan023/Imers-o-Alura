@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Nathalia';
+    src: url(/assets/Fonte/Nathalia.ttf) format('Truetype');
+}
+
+@font-face {
+    font-family: 'BackinBlack';
+    src: url(/assets/Fonte/Back\ to\ Black\ Demo.ttf) format('Truetype');
+}
+
+:root{
+    --page-background: linear-gradient(
+        to bottom right,
+        #ffffff,
+        #fadadd,
+        #00ccff,
+        #cdaafd
+    ); 
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+    background: var(--page-background) ;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    background-image: url(/assets/img/Gwen-Stacy-Ultimato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s ease-in-out;
+}
+
+#g-nav {
+    position: absolute;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+#g-nav .g-nav_item{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+}
+
+#g-nav .g-nav_item a{
+    font-size: 25px;
+}
+
+#g-nav .g-icon img{
+    width: 3.5rem;
+    margin: 0 2.2rem;
+    transition: 1s ease-in-out;
+}
+
+#g-nav .g-icon img:hover{
+    transform: scale(1.2);
+}
+
+#g-nav #Home a{
+    margin: 0 1rem;
+}
+
+#g-content{
+    margin: 0 16rem;
+    position: relative;
+}
+
+#g-content .g-top img{
+    width: 15rem;
+    height: 100%;
+    margin: 1rem 6rem;
+}
+
+#g-content .g-perfil{
+    border: 1px solid #000000;
+    margin: 8rem 0 ;
+}
+
+#g-content .g-perfil h4{
+    font-size: 22px;
+    margin: 5rem 2rem;
+}
+
+#g-content .g-perfil img{
+    width: 15rem;
+    height: auto;
+    margin: -10rem 7rem 1.5rem 5rem;
+    transition: 1s ease-in-out;
+}
+
+#g-content .g-perfil #gwen2{
+    width: 10rem;
+}
+
+#g-content .g-perfil img:hover{
+    transform: scale(1.2);
+    opacity: .1;
+}
+
+#g-content .perfil p{
+    text-align: center;
+    font-size: 22px;
+    margin: 0 1rem 1rem;
+}
+
+#g-content .g-video iframe{
+    width: 22.5rem;
+    height: 17rem;
+    margin: -5rem 1rem 5rem;
+}
+
+body#gwen-hovered::before{
+    background-image: url(/assets/img/gwenback2.jpg);
+    opacity: .69;
+    transition: 1.5s ease-in-out;
+}
+
+body[id^='g'] .g-card:not( .g-card--hovered){
+    opacity: 0;
+}
+
+.g-footer{
+    background: linear-gradient(
+        to top left,
+        #41295a,
+        #2f0743
+    );
+    width: 100%;
+    height: auto;
+}
+.g-footer .g-container img{
+    position: relative;
+    width: 15rem;
+    height: auto;
+    margin: 1.1rem 3rem 0 7rem;      
+    transition: 1s ease-in-out; 
+}
+
+.g-footer .g-container img:hover{
+    transform: scale(1.1);
+}
+
+.g-container #imgb{
+    width: 15rem;
+}
+
+.g-container #imgm{
+    width: 15.7rem;
+    height: auto;
+}

@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Distant_Stroke';
+    src: url(/assets/Fonte/Distant_Stroke.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'BackinBlack';
+    src: url(/assets/Fonte/Back\ to\ Black\ Demo.ttf) format('Truetype');
+}
+
+:root{
+    --page-background:linear-gradient(
+        to bottom right,
+        #ffffff,
+        #2f2f2f,
+        #000000
+    );
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background: var(--page-background);
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    background-image: url(/assets/img/milesback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 2s ease-in-out;
+}
+
+#m-nav {
+    position: absolute;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+#m-nav .m-nav_item{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.25rem;
+}
+
+#m-nav .m-nav_item a{
+    font-size: 35px;
+    transition: 1s ease-in-out;
+}
+
+#m-nav .m-nav_item a:hover{
+    transform: scale(1.2);
+}
+
+#m-nav #home a{
+    margin: 0 1.5rem;
+}
+
+#m-nav .m-icon img{
+    display: flex;
+    flex-direction: row;
+    width: 2.5rem;
+    height: auto;
+    margin: 0 3rem;
+    transition: 1s ease-in-out;
+}
+
+#m-nav .m-icon img:hover{
+    transform: scale(1.2);
+}
+
+.m-content{
+    height: 50px;
+    position: absolute;
+    margin: 0 12rem;
+}
+
+.m-content .m-content-top img{
+    width: 12rem;
+    height: auto;
+    margin: 15rem 25rem 0; 
+}
+
+.m-content .m-content-top{
+    margin: -13rem 0 -4rem 0;
+}
+
+.m-content .m-perfil{
+    border: 1px solid #000000;
+    margin: 10rem 2rem 3rem 0;
+}
+
+.m-content .m-perfil h4{
+    font-size: 27.5px;
+    margin: 6rem 1rem -8rem 3rem ;
+    padding: 0;
+    text-align: center;
+}
+
+.m-content .m-perfil img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 10rem 0 10rem;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.m-content .m-perfil img:hover{
+    transform: scale(1.2);
+    opacity: .1;
+}
+
+.m-content .m-perfil .m-card{
+    width: 9rem;
+}
+
+.m-content .m-perfil p {
+    font-size: 30px;
+    text-align: start;
+    margin: 1rem 2rem 0;
+}
+
+.m-content .m-video iframe{
+    width: 25rem;
+    height: 18rem;
+    margin: 0 2.5rem 3rem;
+}
+
+body#miles-hovered::before {
+    background-image: url(/assets/img/8157053-clonesaga.jpg);
+    opacity: .6;
+    transition: 2s ease-in-out;
+}
+
+body[id^='m'] .m-card:not(.m-card--hovered) {
+    opacity: 0;
+}
+
+.m-footer {
+    background: linear-gradient(
+        to top left,
+        #bdc3c7,
+        #2c3e50
+    );
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 65rem 0 0 0;
+    opacity: .85;
+}
+
+.m-footer img{
+    width: 12rem;
+    height: auto;
+    margin: 1.1rem 6rem 0 6rem; 
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.m-footer img:hover{
+    transform: scale(1.1);
+}
+
+.m-footer #imgk{
+    width: 20rem;
+    height: auto;
+}
+
+.m-footer #imgb{
+    width: 13rem;
+}
+
+.m-footer #description {
+    margin: 1rem;
+    font-family: 'BackinBlack';
+    font-size: 20px;
+    text-align: center;
+}

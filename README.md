@@ -68,3 +68,6 @@ foi colocado um player e audio e animações no background dos personagens
 
 23/10/24
 página do personagem Peter criada e linkada. No qual a Página está estilizada falando um pouco a história do personagem , com vídeos linkados do youtube, imagens redimensionadas e um começo de criação do rodapé 
+
+02/11/24
+Página do Miles e Gwen criados com vídeos linkados e maioria da estilização finalizada.E criação dos rodapés das páginas Peter, Miles e Gwen com a descrição dos personagens 

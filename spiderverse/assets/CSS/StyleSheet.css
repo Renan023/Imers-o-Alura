@@ -150,7 +150,7 @@ body#spiderpeter-hovered::before{
 }
 
 body#spidermiles-hovered::before{
-    background-image: url(../img/milesback.jpg);
+    background-image: url(../img/milesbackmain.jpg);
     opacity: 1;
     transition: 2s ease-in-out;
 }

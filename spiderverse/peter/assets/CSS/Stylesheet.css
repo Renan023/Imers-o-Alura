@@ -3,6 +3,10 @@
     src: url(/assets/Fonte/Jackbrush.ttf) format('Truetype');
 }
 
+@font-face {
+    font-family: 'BackInBlack';
+    src: url(/assets/Fonte/Back\ to\ Black\ Demo.ttf);
+}
 
 :root{
     --page-background: linear-gradient(
@@ -124,7 +128,7 @@ body::before{
 body#peter-hovered::before{
     background-image: url(/assets/img/spiderman_venom_antivenom.jpg);
     opacity: .87;
-    transition: 1s ease-in-out;
+    transition: 1.5s ease-in-out;
 }
 
 body[id^='p'] .p-card:not(.p-card--hovered){
@@ -132,15 +136,42 @@ body[id^='p'] .p-card:not(.p-card--hovered){
 }
 
 .p-footer {
-    position: relative;
-    display: flex;
-    flex-direction: row;
+    position: absolute;
     width: 100%;
-    background: #000000;
+    height: auto;
+    background: linear-gradient(
+        to top left, 
+        #000000 40%,
+        #8b0000
+    );
+    opacity: .8;
 }
 
 .p-footer img{
-    margin: 2rem 6rem;
+    cursor: pointer;
+    margin: 2rem 4rem 0 6rem;
     width: 15rem;
     height: auto;
+    transition: 1s ease-in-out
+}
+
+.p-footer img:hover{
+    transform: scale(1.1);
+}
+
+.p-footer #imgmd{
+    width: 17rem;
+    height: 23rem;
+}
+
+.p-footer #imgock {
+    width: 17rem;
+}
+
+.p-footer h2 {
+    margin: 1rem;
+    font-family: 'BackInBlack';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
 }

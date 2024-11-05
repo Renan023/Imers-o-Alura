@@ -130,29 +130,34 @@ body[id^='g'] .g-card:not( .g-card--hovered){
 .g-footer{
     background: linear-gradient(
         to top left,
-        #41295a,
-        #2f0743
+        #41295a 40%,
+        #0000ff
     );
     width: 100%;
     height: auto;
+    position: absolute;
+    opacity: .86;
 }
-.g-footer .g-container img{
-    position: relative;
-    width: 15rem;
+.g-footer img{
+    width: 14.7rem;
     height: auto;
+    cursor: pointer;
     margin: 1.1rem 3rem 0 7rem;      
     transition: 1s ease-in-out; 
 }
 
-.g-footer .g-container img:hover{
+.g-footer img:hover{
     transform: scale(1.1);
 }
 
-.g-container #imgb{
-    width: 15rem;
-}
-
-.g-container #imgm{
+.g-container #miguel{
     width: 15.7rem;
     height: auto;
+}
+
+.g-footer #description{
+    font-family: 'BackinBlack';
+    font-size: 20px;
+    margin: 1rem;
+    text-align: center;
 }
